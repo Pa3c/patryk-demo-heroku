@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.demo.heroku</groupId>
 	<artifactId>demo-heroku-app</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>demo-heroku</name>
 	<description>Heroku demo reactive spring</description>
 	<properties>
