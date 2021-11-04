@@ -58,6 +58,14 @@ class DemoEndpoint {
 
 			return Flux.fromIterable(hoomans).delayElements(Duration.ofSeconds(1));
 	}
+
+
+
+	@GetMapping(path = "/hello/reksio",produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+	public Flux<String> helloReksio(@RequestParam(name = "name", required = false) String name) {
+
+		return Flux.fromArray("HELLO REKSIO".split("*")).delayElements(Duration.ofSeconds(1));
+	}
 }
 
 record Hooman(String name, double height, double weight) {}
